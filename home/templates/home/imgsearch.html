@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- <link rel="stylesheet" href="variables.css"> -->
+        <meta charset="utf-8">
+        <title>Search</title>
+        <link rel="stylesheet" href="stys.css" />
+        <style>
+            .image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 19.2%;
+                padding-top: 70px;
+                min-width: 218px;
+            }
+            .searchbar
+            {
+                padding: 22px;
+                text-align: center;
+
+            }
+            button {
+                   width: 6px;
+                   height: 6px;
+                   font-size: 7px;
+                   background-color: white;
+                   text-align: center;
+                   padding: 5px;
+               }
+            button:hover {
+                   background-color: rgb(248,249,250);
+               }
+            .divider {
+                width:50px;
+                height:auto;
+                display:inline-block;
+            }
+            .rbutton{margin-left:10px;}
+
+        </style>
+    </head>
+    <body>
+        <h1>Images</h1>
+        <link rel="stylesheet" href="/css/master.css">
+        <link rel="stylesheet" href="/css/master.css">
+        <div>
+            {% load static %} <img src="{% static "media/logo.png" %}" alt="GOOGLE" class = "image"/>
+        </div>
+        <div class="searchbar">
+            <form action="https://www.google.com/search" id="form1">
+                    <input type="text" name="q" size="70">
+                    <p><button type="submit" form="form1" class="button">🔎</p>
+            </form>
+        </div>
+    </body>
+</html>

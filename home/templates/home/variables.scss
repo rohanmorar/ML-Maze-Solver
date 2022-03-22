@@ -1,0 +1,21 @@
+$display: block;
+$margin: auto;
+$color: green;
+
+div {
+    background-color: $color;
+}
+
+// cen {
+//     display: $display;
+//     margin-left: $margin;
+//     margin-right: $margin;
+//     width: 19.2%;
+//     padding-top: 40px;
+//     min-width: 218px;
+// }
+// searchbar{
+//     display: $display;
+//     margin-left: $margin;
+//     margin-right: $margin;
+// }

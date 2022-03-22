@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <!-- <link rel="stylesheet" href="variables.css"> -->
+        <meta charset="utf-8">
+        <title>Search</title>
+        <link rel="stylesheet" href="stys.css" />
+        <style>
+            .image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 19.2%;
+                padding-top: 70px;
+                min-width: 218px;
+            }
+            .searchbar
+            {
+                padding: 22px;
+                text-align: center;
+
+            }
+            button {
+
+                   width: 102px;
+                   color: black;
+                   height: 26px;
+                   font-size: 11px;
+                   font-weight: normal;
+                   background-color: white;
+                   text-align: center;
+                   padding: 5px;
+               }
+              .rbutton {
+                  width: 102px;
+                  color: black;
+                  height: 26px;
+                  font-size: 11px;
+                  font-weight: normal;
+                  background-color: white;
+                  text-align: center;
+                  padding: 5px;
+              }
+            button:hover {
+                   background-color: rgb(248,249,250);
+               }
+            .rbutton{margin-left:10px;}
+            .alignright {
+            margin-top: 4px;
+            float:right;
+            font-family: arial;
+            margin-right: 15px;
+            font-size: 11px;
+            }
+            .alignleft{
+                margin-left: 15px;
+                font-size: 11px;
+                font-family: arial;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>
+                <span class = "alignright">
+                    <a href="https://images.google.com/" style="text-align:right">Images</a>
+                </span>
+                <span class = "alignright">
+                    <a href="https://www.google.com/advanced_search" style="text-align:right">Advanced Search</a>
+                </span>
+                <span class = "alignleft">
+                    <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" style="text-align:left">About</a>
+                </span>
+                <span class = "alignleft">
+                    <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" style="text-align:left">Store</a>
+                </span>
+            </p>
+        </div>
+            <!-- #change to href + html for applications (images / adv. search) -->
+        <div>
+            {% load static %} <img src="{% static "media/logo.png" %}" alt="GOOGLE" class = "image"/>
+        </div>
+        <div class="searchbar">
+            <form action="https://www.google.com/search" id="form1">
+                    <input type="text" name="q" size="70">
+                    <p><button type="submit" form="form1" class="button">Google Search</p>
+                    <button type="submit" form="form1" class="rbutton">I'm Feeling Lucky
+            </form>
+        </div>
+    </body>
+</html>
